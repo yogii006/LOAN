@@ -87,13 +87,13 @@ def run():
             st.error(
                 "Hello: " + fn +" || "
                 "Account number: "+account_no +' || '
-                'According to our Calculations, you will not get the loan from Bank'
+                'According to our Calculations, you will not get the loan from Bank :blue[test]'
             )
         else:
             st.success(
                 "Hello: " + fn +" || "
                 "Account number: "+account_no +' || '
-                'Congratulations!! you will get the loan from Bank :blue[test]"'
+                'Congratulations!! you will get the loan from Bank :green[test]'
             )
 
 run()
