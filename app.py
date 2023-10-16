@@ -84,16 +84,16 @@ def run():
         lc = [str(i) for i in prediction]
         ans = int("".join(lc))
         if ans == 0:
-            st.error(
-                ":red[Hello: ]" + fn +" :red[|| ]"
-                ":red[Account number: ]"+account_no +':red[ || ]'
-                ':red[According to our Calculations, you will not get the loan from Bank]'
+            st.error(:red[
+                "Hello: " + fn +" || "
+                "Account number:"+account_no +'|| '
+                'According to our Calculations, you will not get the loan from Bank']
             )
         else:
-            st.success(
-                ":green[Hello: ]" + fn +" :green[|| ]"
-                ":green[Account number:] "+account_no +' :green[|| ]'
-                ':green[Congratulations!! you will get the loan from Bank]'
+            st.success(:green[
+                "Hello: " + fn +" || "
+                "Account number "+account_no +' || '
+                'Congratulations!! you will get the loan from Bank']
             )
 
 run()
