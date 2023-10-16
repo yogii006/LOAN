@@ -23,7 +23,7 @@ def run():
     gen = st.selectbox("Gender",gen_options, format_func=lambda x: gen_display[x])
 
     ## For Marital Status
-    mar_display = ('No','Yes')
+    mar_display = ('Unmarried','Married')
     mar_options = list(range(len(mar_display)))
     mar = st.selectbox("Marital Status", mar_options, format_func=lambda x: mar_display[x])
 
@@ -48,9 +48,9 @@ def run():
     prop = st.selectbox("Property Area",prop_options, format_func=lambda x: prop_display[x])
 
     ## For Credit Score
-    cred_display = ('Between 300 to 500','Above 500')
-    cred_options = list(range(len(cred_display)))
-    cred = st.selectbox("Credit Score",cred_options, format_func=lambda x: cred_display[x])
+    # cred_display = ('Between 300 to 500','Above 500')
+    # cred_options = list(range(len(cred_display)))
+    # cred = st.selectbox("Credit Score",cred_options, format_func=lambda x: cred_display[x])
 
     ## Applicant Monthly Income
     mon_income = st.number_input("Applicant's Monthly Income($)",value=0)
